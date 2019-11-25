@@ -1,0 +1,62 @@
+﻿<br />
+<table class="cent">
+<tr class="h">
+<td class="half"><h2>vložení příspěvku</h2></td>
+<td rowspan="5">
+	<a href="./scripts/nogal.php" class="piclin" title="zvětšit obrázek">
+		<img src="./pics/new_vv.jpg" alt="titulni obrazek" class="titimg" />
+	</a>
+</td>
+
+</tr>
+<tr><td class="menu">
+<form name="mainform" id="form" method="post" action="index.php">
+	<label>jméno:
+		<input type="text" class="inputtext" id="pivo" name="jmeno" />
+	</label>
+	<label>
+		<input type="checkbox" name="generate" /> Chci vvopici
+	</label><br /><br />
+	<textarea name="text" id="te"></textarea><br /><br />
+	<b>
+		<a href="./ab.php" class="" target="_blank" title="nastavit akci / akce">
+			spravovat akce
+		</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</b>
+	<label>
+		<input type=radio name="adding" value="limca" /> limča
+	</label>
+	<label>
+		<input type=radio name="adding" value="pivo" /> pivo
+	</label>
+	<label>
+		<input type=radio name="adding" value="mliko" /> mlíko
+	</label>
+	<br />
+	<input type=submit value="poslat" class="submit">
+</form>
+</td>
+</tr><tr>
+<td><h2>filtrování příspěvků</h2></td>
+</tr><tr>
+<td class="menu">
+<form id="formint" method="get" action="index.php">
+vypsat příspěvky za posledních
+<input type=text class="dny" name="int" value="14">
+ dní
+<input type=submit value="=>">
+</form>
+</td>
+</tr><tr>
+<td class="menu">
+
+<form id="formsearch" method="get" action="index.php">
+
+vyhledat v příspěvcích řetězec <input type=text class="hled" name="searched">
+<input type=submit value="=>">
+<input type=hidden name="searching" value="true">
+</form>
+
+</td></tr></table>
+<br /><br />
